@@ -143,5 +143,30 @@ POS/ ├── Puntos de Venta Electrónicos AÑO 2020 (1).xlsx ├── Puntos
 
 Contiene **datos anuales de retiros de efectivo**:
 
+RETIROS/ ├── retiros-dinero-dic-2020.xlsx ├── retiros-dinero-dic-2021.xlsx ├── retiros-dinero-dic-2022.xlsx ├── retiros-dinero-dic-2023.xlsx └── Retiros de Dinero DICIEMBRE 2024.xlsx
+
+**Uso:** Número de transacciones de retiro de efectivo (RET) anualmente
+
+**Fórmula de PAY:**
+PAY = sqrt((GD/2) × (POS / (POS + RET))) × 100
+
+Donde:
+
+GD = Giro Digital (volumen de transacciones interbancarias)
+POS = Transacciones en punto de venta
+RET = Retiros de efectivo
+(POS + RET) = Total de transacciones de pago
+POS/(POS+RET) = Ratio de "cashlessness" (menor efectivo)
+
+    ⬇️ VISUALIZACIÓN
+---
+
+## 🚀 Cómo Usar la Herramienta
+
+### 1️⃣ Acceder a la herramienta
+Abre **IDE-EC.html** en tu navegador web:
+```bash
+Haz doble clic en IDE-EC.html
+
 
 
